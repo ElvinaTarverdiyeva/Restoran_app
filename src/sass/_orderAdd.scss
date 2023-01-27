@@ -1,0 +1,63 @@
+.orderAddContainer {
+  h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 47px;
+  }
+  form {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    button{
+          @include buttonStyle;
+          width: 224px;
+          height: 30px;
+          
+          
+    }
+  }
+  .select {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    select {
+      background: #ffffff;
+      border: 1px solid #829460;
+      border-radius: 10px;
+      width: 224px;
+      height: 30px;
+      outline: none;
+      padding-left: 10px;
+      option{
+          color: black;
+      }
+    }
+    label {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+
+
+@media screen and (max-width:550px) {
+  .orderAddContainer{
+    padding: 20px 50px;
+    .select{
+      width: 100%;
+      select{
+        width: 100%;
+      }
+    }
+    form{
+ button{
+      width: 100%;
+    }
+    }
+   
+  }
+}

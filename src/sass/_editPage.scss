@@ -1,0 +1,196 @@
+.editpage {
+  padding: 0 20px;
+  .againBtn {
+    width: 300px;
+    height: 35px;
+    // padding: 5px 20px;
+  }
+  .container {
+    height: 50vh;
+    display: grid;
+    place-items: center;
+  }
+
+  .loading {
+    display: flex;
+    transform: scale(4);
+  }
+
+  .loading .ball {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s infinite;
+  }
+
+  .ball + .ball {
+    margin-left: 0.4rem;
+  }
+
+  .loading .ball.one {
+    animation: loadingBall 0.5s infinite alternate;
+    background: #ff592930;
+  }
+  .loading .ball.two {
+    animation: loadingBall2 0.5s infinite 0.2s alternate;
+    background: #fc065130;
+  }
+  .loading .ball.three {
+    animation: loadingBall3 0.5s infinite 0.35s alternate;
+    background: #6cb94430;
+  }
+  .loading .ball.four {
+    animation: loadingBall4 0.5s infinite 0.5s alternate;
+    background: #2de2fa30;
+  }
+
+  @keyframes loadingBall {
+    0% {
+      transform: translateY(0);
+    }
+    0% {
+      transform: translateY(-10px) scale(1.2);
+      background: #ff5929;
+      box-shadow: 0 0 2px #ff5929aa;
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+
+  @keyframes loadingBall2 {
+    0% {
+      transform: translateY(0);
+    }
+    0% {
+      transform: translateY(-10px) scale(1.2);
+      background: #fc0651;
+      box-shadow: 0 0 2px #fc0651aa;
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+
+  @keyframes loadingBall3 {
+    0% {
+      transform: translateY(0);
+    }
+    0% {
+      transform: translateY(-10px) scale(1.2);
+      background: #6cb944;
+      box-shadow: 0 0 2px #6cb944aa;
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+
+  @keyframes loadingBall4 {
+    0% {
+      transform: translateY(0);
+    }
+    0% {
+      transform: translateY(-10px) scale(1.2);
+      background: #2de2fa;
+      box-shadow: 0 0 2px #2de2faaa;
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 36px;
+  }
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    .btn {
+      width: 100%;
+    }
+    .select {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      select {
+        background: #ffffff;
+        border: 1px solid #829460;
+        border-radius: 10px;
+        width: 224px;
+        height: 30px;
+        outline: none;
+        padding-left: 10px;
+        option {
+          color: black;
+        }
+      }
+      label {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+  .inp {
+    width: 40%;
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    label {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    input {
+      background: #ffffff;
+      border: 1px solid #829460;
+      border-radius: 10px;
+      width: 224px;
+      height: 30px;
+      outline: none;
+      padding-left: 10px;
+    }
+  }
+  button {
+    width: 130px;
+    height: 30px;
+    @include buttonStyle;
+    margin-top: 50px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .editpage {
+    padding: 20px 30px;
+    form {
+      gap: 20px;
+      flex-direction: column;
+      .inp {
+        width: 100%;
+        input {
+          width: 100%;
+        }
+      }
+      .select {
+        width: 100%;
+        select {
+          width: 100%;
+        }
+      }
+      button {
+        width: 100%;
+          margin-top: 20px;
+          margin-right: 0px;
+          height: 35px;
+        
+      }
+    }
+  }
+}

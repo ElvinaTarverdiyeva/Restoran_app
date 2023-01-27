@@ -1,0 +1,30 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+main {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+@mixin buttonStyle() {
+  background: #90a17d;
+  border-radius: 20px;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffe1e1;
+}
+@import "header";
+@import "homePage";
+@import "orders";
+@import "editPage";
+@import "orderAdd";
+@import "userOrders";
+
+
+
+

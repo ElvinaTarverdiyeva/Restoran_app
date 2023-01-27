@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "sirasayi": 1,
+    "masa": "m1",
+    "xidmetci": "Murtuz",
+    "status": "sonlanib",
+    "mebleg": 23.7,
+    "sonlanmaTarixi": "2022-12-12T3:00",
+    "sifarisler": [
+      {
+        "id": 1,
+        "name": "Corekde et doner",
+        "price": 9.6,
+        "count": 2,
+        "countPrice": 19.2
+      },
+      {
+        "id": 2,
+        "name": "Toyuq kotlet",
+        "price": 4.5,
+        "count": 1,
+        "countPrice": 4.5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "sirasayi": 2,
+    "masa": "c1",
+    "xidmetci": "Murtuz",
+    "status": "sonlanib",
+    "mebleg": 9,
+    "sonlanmaTarixi": "2022-10-11T12:00",
+    "sifarisler": [
+      {
+        "id": 2,
+        "name": "Toyuq kotlet",
+        "price": 4.5,
+        "count": 1,
+        "countPrice": 4.5
+      },
+      {
+        "id": 3,
+        "name": "Mercumek",
+        "price": 3.5,
+        "count": 1,
+        "countPrice": 3.5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "sirasayi": 3,
+    "masa": "c3",
+    "xidmetci": "Murtuz",
+    "status": "sonlanib",
+    "mebleg": 23.9,
+    "sonlanmaTarixi": "2022-11-09T15:00",
+    "sifarisler": [
+      {
+        "id": 5,
+        "name": "coco-cola",
+        "price": 3,
+        "count": 3,
+        "countPrice": 9
+      },
+      {
+        "id": 6,
+        "name": "pizza",
+        "price": 14.9,
+        "count": 1,
+        "countPrice": 14.9
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "sirasayi": 4,
+    "masa": "m4",
+    "xidmetci": "Murtuz",
+    "status": "sonlanmayib",
+    "mebleg": 11.2,
+    "sonlanmaTarixi": "2022-09-10T20:00",
+    "sifarisler": [
+      {
+        "id": 4,
+        "name": "Corekde toyuq doner",
+        "price": 5.6,
+        "count":2,
+        "countPrice": 11.2
+      }
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+table,
+tr,
+th,
+td {
+  border: 1px solid #829460;
+  border-spacing: 0;
+}
+table {
+  th,
+  td {
+    padding: 10px 30px;
+  }
+  button {
+    width: 100px;
+    height: 30px;
+    @include buttonStyle;
+  }
+}
+.orders h4{
+  margin-bottom: 50px;
+  font-size:25px;
+}
+
+@media screen and (max-width:963px) {
+  table{
+    width: 100%;
+    th,
+    td {
+      padding: 10px 5px;
+    }
+
+  }
+  .orders h4{
+    font-size:20px;
+  }
+
+}
+
+@media screen and (max-width:563px) {
+  table{
+    th,
+    td {
+      font-size: 10px;
+    }
+    button {
+      width: 50px;
+      height: 20px;
+      @include buttonStyle;
+      font-size: 10px;
+    }
+  }
+}
+@media screen and (max-width:373px) {
+  table{
+  th,td{
+    padding: 10px 2px;
+font-size: 8px;
+  }
+  }
+  .orders h4{
+    font-size:16px;
+    margin-bottom: 20px;
+  } 
+}

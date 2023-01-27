@@ -1,0 +1,41 @@
+.homePgae {
+  img{
+    width: 80%;
+    border-radius: 20px;
+    display: block;
+    margin: 20px 0;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 40px 0 20px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  button {
+    display: block;
+    margin-left: auto;
+    padding: 7px 30px;
+    margin-top: 40px;
+    @include buttonStyle;
+    margin-right: 30px;
+
+
+  }
+}
+@media screen and (max-width:770px) {
+  .homePgae{
+    img{
+      width: 100%;
+    }
+  }
+}
